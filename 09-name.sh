@@ -21,3 +21,10 @@ done
 echo "This is the master branch version"
 date
 
+for server in $servers; do
+    ping -c 2 $server
+    echo "----------------------"
+done
+
+echo "This is the parallel branch version"
+date

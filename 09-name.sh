@@ -12,3 +12,10 @@ done
 # exercise: Change the list of servers and also the 
 # operation applied to them. For instance, use ping, 
 # traceroute, or nslookup with other options.
+for server in $servers; do
+    ping -c 2 $server
+    echo "----------------------"
+done
+
+echo "This is the parallel branch version"
+date

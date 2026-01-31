@@ -14,7 +14,10 @@ done
 # traceroute, or nslookup with other options.
 
 for server in $servers; do
-    ping $server
+    ping -c 3 $server
     echo "----------------------------"
 done
+
+echo "This is the master branch version"
+date
 
